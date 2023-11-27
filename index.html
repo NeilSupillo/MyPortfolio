@@ -9,35 +9,37 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Neil Bernard Supillo</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Neil Supillo</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <div class="fixed">
+      <nav id="desktop-nav">
+        <div class="logo">Neil Bernard Supillo</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Neil Supillo</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
+      </nav>
+      <div class="theme">
+        <img class="mode" src="/assets/moon.png" alt="theme" />
       </div>
-    </nav>
-    <div class="theme">
-      <img class="mode" src="/assets/moon.png" alt="theme" />
     </div>
     <section id="profile">
       <div class="section__pic-container">
@@ -45,7 +47,7 @@
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Neil Bernard Supillo</h1>
+        <h1 class="title">Neil Bernard</h1>
         <p class="section__text__p2">Programmer</p>
         <div class="btn-container">
           <button
@@ -251,12 +253,12 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/vercel.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h4>Netlify</h4>
+                  <h4>Vercel</h4>
                   <p>Basic</p>
                 </div>
               </article>
@@ -294,66 +296,186 @@
 
       <div id="myDIV">
         <button class="bts1 btnp btn btn-color-2 project-btn active">
-          w/ Node.js
+          w/ frameworks
         </button>
         <button class="bts2 btnp btn btn-color-2 project-btn">
-          w/o Node.js
+          w/o frameworks
         </button>
       </div>
       <div class="experience-details-container">
         <div class="about-containers add-projects">
-          <div class="pro details-container color-container">
+          <!-- w/ framework-->
+          <div class="pro details-container color-container with">
             <div class="article-container">
               <img
-                src="./assets/pro1.png"
+                src="./assets/project-pic/secret.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">One piece crew</h2>
+            <h2 class="experience-sub-title project-title">Secrets</h2>
             <p class="project-des">
-              A website to see the whole crew of "Mugiwara Pirates"
+              A website built using the <span class="stack">"MEN"</span> stack
+              that allows users to see and submit their secrets anonymously.
             </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick=" window.open('https://github.com/NeilSupillo/Secret-website')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick=" window.open('https://secret-website-nine.vercel.app/')"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="pro details-container color-container without">
+          <div class="pro details-container color-container with">
             <div class="article-container">
               <img
-                src="./assets/pro1.png"
+                src="./assets/project-pic/bookmanagement.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">
+              Bookstore Management
+            </h2>
+            <p class="project-des">
+              A website built using the <span class="stack">"MERN"</span> stack
+              that allows users to store and management their books.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick=" window.open('https://github.com/NeilSupillo/book-management')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick=" window.open('https://book-management-client-phi.vercel.app/')"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="pro details-container color-container without">
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/keeper.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Keeper</h2>
+            <p class="project-des">
+              A website built using the <span class="stack">"MERN"</span> stack
+              that allows users to write notes.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/keeper')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://keeper-frontend-sigma.vercel.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/qr.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              QR Scanner and Generator
+            </h2>
+            <p class="project-des">
+              A website built using the <span class="stack">"ERN"</span> stack
+              that allows users to scan and generate a qr code.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/qr-generator-and-scanner')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://qr-generator-and-scanner.vercel.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/emojipedia.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Emojipedia</h2>
+            <p class="project-des">
+              A website that allows users to see and search for their favorite
+              emojis.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/emojipedia')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://emojipedia-gules.vercel.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container with">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/tindog.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tindog</h2>
+            <p class="project-des">A landing page for the Tindog app.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/Tindog')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://neilsupillo.github.io/Tindog/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- w/o framework-->
+          <div class="pro details-container color-container without hide">
             <div class="article-container">
               <img
                 src="./assets/pro1.png"
@@ -361,17 +483,149 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">One Piece Crew</h2>
+            <p class="project-des">See the one-piece crew bounty.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick=" window.open('https://github.com/NeilSupillo/Onepiece-bounty')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick=" window.open('https://neilsupillo.github.io/Onepiece-bounty/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container without hide">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/dicegame.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Dice Game</h2>
+            <p class="project-des">An Online Random Dice</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/diceGame')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://neilsupillo.github.io/diceGame/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container without hide">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/drum.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Drum</h2>
+            <p class="project-des">Play drums using keyboard</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/Drum')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://neilsupillo.github.io/Drum/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container without hide">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/foot.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Foot to Centimeter
+            </h2>
+            <p class="project-des">
+              Convert foot to centimeter and vice versa.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/Foot-to-centimeter')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://neilsupillo.github.io/Foot-to-centimeter/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container without hide">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/simon.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Simon Game</h2>
+            <p class="project-des">
+              Simon Game Online. How long a sequence can you remember?
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/simon-game')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://neilsupillo.github.io/simon-game/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="pro details-container color-container without hide">
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/takoyaki.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Takoyakings</h2>
+            <p class="project-des">A landing page for Takoyakings.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://github.com/NeilSupillo/Taco-Shop')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick=" window.open('https://neilsupillo.github.io/Taco-Shop/')"
               >
                 Live Demo
               </button>

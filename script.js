@@ -18,28 +18,38 @@ btn1.addEventListener("click", function () {
   btn2.classList.remove("active");
   //add.removeChild(detailsContainer);
   function div1hide() {
-    const hide = document.getElementsByClassName("without");
-    console.log(hide);
+    const hide = document.getElementsByClassName("with");
     for (var i = 0; i < hide.length; i++) {
-      hide[i].removeAttribute("hidden");
+      hide[i].classList.remove("hide");
     }
   }
   div1hide();
+  function div2hide() {
+    const hide = document.getElementsByClassName("without");
+    for (var i = 0; i < hide.length; i++) {
+      hide[i].classList.add("hide");
+    }
+  }
+  div2hide();
 });
 btn2.addEventListener("click", function () {
   btn1.classList.remove("active");
   btn2.classList.add("active");
 
   function div1hide() {
-    const hide = document.getElementsByClassName("without");
-    console.log(hide);
+    const hide = document.getElementsByClassName("with");
     for (var i = 0; i < hide.length; i++) {
-      hide[i].setAttribute("hidden", true);
+      hide[i].classList.add("hide");
     }
   }
   div1hide();
-  // Append the details container to the document body
-  //add.appendChild(detailsContainer);
+  function div2hide() {
+    const hide = document.getElementsByClassName("without");
+    for (var i = 0; i < hide.length; i++) {
+      hide[i].classList.remove("hide");
+    }
+  }
+  div2hide();
 });
 
 var add = document.querySelector(".add-projects");
