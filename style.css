@@ -39,11 +39,8 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
-  color: black;
-}
 h4 {
-  color: black;
+  color: var(--font);
 }
 
 .lorem {
@@ -362,7 +359,7 @@ section {
 .details-container {
   padding: 1rem;
   flex: 1;
-  background: white;
+  background: var(--primary-color);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -392,7 +389,7 @@ section {
 }
 
 .experience-sub-title {
-  color: black;
+  color: var(--font);
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -414,6 +411,7 @@ section {
 }
 .article-container p {
   font-size: 0.8rem;
+  color: var(--font);
 }
 article {
   display: flex;
@@ -442,7 +440,7 @@ article .icon {
 }
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: white;
+
   max-width: 270px;
 }
 
@@ -454,7 +452,7 @@ article .icon {
 
 .project-title {
   margin: 0.3rem 0.4rem 0;
-  color: black;
+  color: var(--font);
 }
 
 .project-btn {
@@ -466,8 +464,8 @@ article .icon {
 
 .project-btn:hover {
   color: white;
-  border: black 0.1rem solid;
-  background-color: black;
+  border: rgb(255, 255, 255) 0.1rem solid;
+  background-color: #121212;
 }
 
 .project-des {
