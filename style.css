@@ -9,6 +9,7 @@
   --icon: #121212;
   --font: #121212;
   --hover: #121212;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .dark-theme {
   --primary-color: #121212;
@@ -17,6 +18,7 @@
   --icon: white;
   --font: white;
   --hover: white;
+  --shadow: rgba(70, 70, 75, 0.432) 0px 7px 29px 0px;
 }
 * {
   margin: 0;
@@ -24,8 +26,8 @@
 }
 
 hr {
-  width: 93%;
-  margin: 1rem auto;
+  width: 97%;
+  margin: auto;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -380,7 +382,7 @@ section {
 /* EXPERIENCE SECTION */
 .skills {
   max-width: 400px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: var(--shadow);
 }
 #experience {
   position: relative;
@@ -431,7 +433,7 @@ article .icon {
   scroll-margin-top: 3rem;
 }
 .pro {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--shadow);
   transition: transform 550ms;
   margin-bottom: auto;
 }
@@ -483,6 +485,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 2rem;
   /* height: 70vh; */
 }
 
@@ -542,6 +545,7 @@ footer p {
 .btnp:hover {
   background-color: black;
   color: white;
+  border: var(--hover) 0.1rem solid;
 }
 
 /* certificate*/
@@ -569,7 +573,7 @@ footer p {
 .cert-img-con {
   margin: auto;
   max-width: 600px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: var(--shadow);
 }
 #myDIV {
   display: flex;

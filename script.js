@@ -52,53 +52,53 @@ btn2.addEventListener("click", function () {
   div2hide();
 });
 
-var add = document.querySelector(".add-projects");
-// Create a details container
-var detailsContainer = document.createElement("div");
-detailsContainer.className = "pro details-container color-container";
+// var add = document.querySelector(".add-projects");
+// // Create a details container
+// var detailsContainer = document.createElement("div");
+// detailsContainer.className = "pro details-container color-container";
 
-// Create the article container for the image
-var articleContainer = document.createElement("div");
-articleContainer.className = "article-container";
+// // Create the article container for the image
+// var articleContainer = document.createElement("div");
+// articleContainer.className = "article-container";
 
-// Create the project image
-var projectImage = document.createElement("img");
-projectImage.src = "./assets/pro1.png";
-projectImage.alt = "Project 1";
-projectImage.className = "project-img";
+// // Create the project image
+// var projectImage = document.createElement("img");
+// projectImage.src = "./assets/pro1.png";
+// projectImage.alt = "Project 1";
+// projectImage.className = "project-img";
 
-// Create the project title
-var projectTitle = document.createElement("h2");
-projectTitle.className = "experience-sub-title project-title";
-projectTitle.textContent = "Project One";
+// // Create the project title
+// var projectTitle = document.createElement("h2");
+// projectTitle.className = "experience-sub-title project-title";
+// projectTitle.textContent = "Project One";
 
-// Create the button container
-var btnContainer = document.createElement("div");
-btnContainer.className = "btn-container";
+// // Create the button container
+// var btnContainer = document.createElement("div");
+// btnContainer.className = "btn-container";
 
-// Create the Github button
-var githubButton = document.createElement("button");
-githubButton.className = "btn btn-color-2 project-btn";
-githubButton.textContent = "Github";
-githubButton.onclick = function () {
-  window.location.href = "https://github.com/";
-};
+// // Create the Github button
+// var githubButton = document.createElement("button");
+// githubButton.className = "btn btn-color-2 project-btn";
+// githubButton.textContent = "Github";
+// githubButton.onclick = function () {
+//   window.location.href = "https://github.com/";
+// };
 
-// Create the Live Demo button
-var liveDemoButton = document.createElement("button");
-liveDemoButton.className = "btn btn-color-2 project-btn";
-liveDemoButton.textContent = "Live Demo";
-liveDemoButton.onclick = function () {
-  window.location.href = "https://github.com/";
-};
+// // Create the Live Demo button
+// var liveDemoButton = document.createElement("button");
+// liveDemoButton.className = "btn btn-color-2 project-btn";
+// liveDemoButton.textContent = "Live Demo";
+// liveDemoButton.onclick = function () {
+//   window.location.href = "https://github.com/";
+// };
 
-// Append elements to the details container
-articleContainer.appendChild(projectImage);
-btnContainer.appendChild(githubButton);
-btnContainer.appendChild(liveDemoButton);
-detailsContainer.appendChild(articleContainer);
-detailsContainer.appendChild(projectTitle);
-detailsContainer.appendChild(btnContainer);
+// // Append elements to the details container
+// articleContainer.appendChild(projectImage);
+// btnContainer.appendChild(githubButton);
+// btnContainer.appendChild(liveDemoButton);
+// detailsContainer.appendChild(articleContainer);
+// detailsContainer.appendChild(projectTitle);
+// detailsContainer.appendChild(btnContainer);
 
 // darkmode ---------
 const iconDiv = document.querySelector(".theme");
